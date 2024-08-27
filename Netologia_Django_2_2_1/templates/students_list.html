@@ -1,0 +1,9 @@
+<!-- templates/students_list.html -->
+{% for student in students %}
+    <h2>{{ student.name }}</h2>
+    <ul>
+        {% for teacher in student.teachers.all %}
+            <li>{{ teacher.name }}: {{ teacher.subject }}</li>
+        {% endfor %}
+    </ul>
+{% endfor %}

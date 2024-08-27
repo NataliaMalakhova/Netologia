@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ phone.name }}</title>
+</head>
+<body>
+    <h1>{{ phone.name }}</h1>
+    <p>Price: {{ phone.price }} ₽</p>
+    <p>Release Date: {{ phone.release_date }}</p>
+    <p>LTE Support: {{ phone.lte_exists }}</p>
+    <img src="{{ phone.image }}" alt="{{ phone.name }}">
+    <a href="{% url 'catalog' %}">Back to Catalog</a>
+</body>
+</html>
